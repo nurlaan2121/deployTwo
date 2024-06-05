@@ -23,7 +23,7 @@ WORKDIR /app
 COPY --from=build /app/build/libs/*.jar ./project.jar
 
 # Set the command to run the application
-CMD ["java", "-jar", "com.example.jar"]
+CMD ["java", "-jar", "project.jar"]
 
 # Expose the application port
 EXPOSE 2024
