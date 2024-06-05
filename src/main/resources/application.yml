@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: DeployTwo
+
+    config:
+        import:
+            - classpath:/settings/s3-settings.yml
+            - classpath:/settings/db-settings.yml
+            - classpath:/settings/security-settings.yml
+            - classpath:/settings/server-settings.yml

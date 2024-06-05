@@ -1,0 +1,20 @@
+application:
+  bucket:
+    name: ebook-b12
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA3KYNRCVIBB2TALRT
+      secret-key: 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
+    region:
+      profile-path: https://lms-b12.s3.eu-central-1.amazonaws.com/
+      static: eu-central-1
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 1000MB
+      max-file-size: 10000MB
+      max-request-size: 80000MB

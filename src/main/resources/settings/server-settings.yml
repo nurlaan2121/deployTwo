@@ -1,0 +1,10 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+spring:
+  servlet:
+    multipart:
+      file-size-threshold: 1000MB
+      max-file-size: 10000MB
+      max-request-size: 80000MB

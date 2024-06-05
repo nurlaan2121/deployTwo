@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ebookawsdb.cl4wygyemreu.eu-north-1.rds.amazonaws.com:5432/simple_db
+    username: postgres
+    password: java12ebook
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+
+  #DATA-INIT
+  sql:
+    init:
+      data-locations: classpath:datainit/dataInit.sql
+      mode: never
+
+  #Migration
+  flyway:
+    enabled: true
+    locations: classpath:db.migration
+    baseline-on-migrate: true
